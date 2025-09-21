@@ -1,60 +1,73 @@
 name: Update IMDb Top TV List
 
+# -----------------------------------------------------------------
 # Triggers
+# -----------------------------------------------------------------
 on:
   schedule:
-    - cron: '0 3 * * *'        # daily at 03:00 UTC
-  workflow_dispatch:           # enable manual runs from the UI
+    - cron: '0 3 * * *'        # daily at 03:00 UTC
+  workflow_dispatch:           # manual run from the UI
 
+# -----------------------------------------------------------------
+# Job definition
+# -----------------------------------------------------------------
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write           # needed for the commit push
+      contents: write           # needed for the commit & push
 
     steps:
+      # -----------------------------------------------------------------
       # 1️⃣ Checkout the repo
+      # -----------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # -----------------------------------------------------------------
       # 2️⃣ Set up Python
+      # -----------------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3️⃣ Install dependencies
+      # -----------------------------------------------------------------
+      # 3️⃣ Install pip dependencies
+      # -----------------------------------------------------------------
       - name: Install pip dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4️⃣ Run the script (produces top_25.json)
-      - name: Generate top 25 JSON list
-        run: |
-          python generate_list.py -n 25 -o top_25.json
-
-      - name: wait a bit
-        run: sleep 2   # wait a bit to ensure file system timestamps are updated
-      
-        # 4️⃣ Run the script (produces top_10.json)
-      - name: Generate top 10 JSON list
-        run: |
-          python generate_list.py -n 10 -o top_10.json
-
-      - name: wait a bit
-        run: sleep 2   # wait a bit to ensure file system timestamps are updated    
-              
-        # 4️⃣ Run the script (produces top_25.json)
+      # -----------------------------------------------------------------
+      # 4️⃣ Generate the three JSON lists (5 / 10 / 25)
+      # -----------------------------------------------------------------
       - name: Generate top 5 JSON list
         run: |
           python generate_list.py -n 5 -o top_5.json
+      - name: Wait a moment (timestamps)
+        run: sleep 2
 
-      # 5️⃣ Commit & push if file changed
-      - name: Commit changes
+      - name: Generate top 10 JSON list
+        run: |
+          python generate_list.py -n 10 -o top_10.json
+      - name: Wait a moment (timestamps)
+        run: sleep 2
+
+      - name: Generate top 25 JSON list
+        run: |
+          python generate_list.py -n 25 -o top_25.json
+      - name: Wait a moment (timestamps)
+        run: sleep 2
+
+      # -----------------------------------------------------------------
+      # 5️⃣ Commit & push any changed JSON files
+      # -----------------------------------------------------------------
+      - name: Commit JSON changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Update top‑25 IMDb TV list"
-          file_pattern: top_25.json
-          # optional: only commit if there are changes
-          # (the action does this automatically)
+          commit_message: |
+            🤖 Update IMDb top‑5 / top‑10 / top‑25 JSON lists
+          # Use a glob that matches all three files (easier to extend later)
+          file_pattern: "top_*.json"
