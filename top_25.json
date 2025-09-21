@@ -1,13 +1,15 @@
 [
   {
     "title": "Wednesday",
-    "imdb_id": "tt13443470",
-    "tmdb_id": "119051"
+    "imdbid": "tt13443470",
+    "tmdbid": "119051",
+    "tvdbId": "397060"
   },
   {
     "title": "Task",
-    "imdb_id": "tt28013708",
-    "tmdb_id": "228305"
+    "imdbid": "tt28013708",
+    "tmdbid": "228305",
+    "tvdbId": "451873"
   },
   {
     "title": "Alien: Earth",
