@@ -30,9 +30,25 @@ jobs:
           pip install -r requirements.txt
 
       # 4️⃣ Run the script (produces top_25.json)
-      - name: Generate JSON list
+      - name: Generate top 25 JSON list
         run: |
           python generate_list.py -n 25 -o top_25.json
+
+      - name: wait a bit
+        run: sleep 2   # wait a bit to ensure file system timestamps are updated
+      
+        # 4️⃣ Run the script (produces top_10.json)
+      - name: Generate top 10 JSON list
+        run: |
+          python generate_list.py -n 10 -o top_10.json
+
+      - name: wait a bit
+        run: sleep 2   # wait a bit to ensure file system timestamps are updated    
+              
+        # 4️⃣ Run the script (produces top_25.json)
+      - name: Generate top 5 JSON list
+        run: |
+          python generate_list.py -n 5 -o top_5.json
 
       # 5️⃣ Commit & push if file changed
       - name: Commit changes
