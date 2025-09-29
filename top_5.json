@@ -1,11 +1,15 @@
 [
   {
-    "title": "Black Rabbit",
-    "tvdbId": 447579
+    "title": "Wayward",
+    "tvdbId": 433309
   },
   {
-    "title": "Wednesday",
-    "tvdbId": 397060
+    "title": "House of Guinness",
+    "tvdbId": 447594
+  },
+  {
+    "title": "Black Rabbit",
+    "tvdbId": 447579
   },
   {
     "title": "Alien: Earth",
@@ -14,9 +18,5 @@
   {
     "title": "Task",
     "tvdbId": 451873
-  },
-  {
-    "title": "Gen V",
-    "tvdbId": 417909
   }
 ]

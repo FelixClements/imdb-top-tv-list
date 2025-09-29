@@ -1,11 +1,15 @@
 [
   {
-    "title": "Black Rabbit",
-    "tvdbId": 447579
+    "title": "Wayward",
+    "tvdbId": 433309
   },
   {
-    "title": "Wednesday",
-    "tvdbId": 397060
+    "title": "House of Guinness",
+    "tvdbId": 447594
+  },
+  {
+    "title": "Black Rabbit",
+    "tvdbId": 447579
   },
   {
     "title": "Alien: Earth",
@@ -16,79 +20,79 @@
     "tvdbId": 451873
   },
   {
-    "title": "Gen V",
-    "tvdbId": 417909
-  },
-  {
-    "title": "The Summer I Turned Pretty",
-    "tvdbId": 396505
-  },
-  {
-    "title": "The Girlfriend",
-    "tvdbId": 449706
-  },
-  {
     "title": "Peacemaker",
     "tvdbId": 391153
   },
   {
-    "title": "Only Murders in the Building",
-    "tvdbId": 399959
+    "title": "Wednesday",
+    "tvdbId": 397060
   },
   {
-    "title": "Adolescence",
-    "tvdbId": 452467
-  },
-  {
-    "title": "The Pitt",
-    "tvdbId": 448176
-  },
-  {
-    "title": "The Terminal List: Dark Wolf",
-    "tvdbId": 464185
-  },
-  {
-    "title": "Dexter: Resurrection",
-    "tvdbId": 452595
-  },
-  {
-    "title": "Dexter",
-    "tvdbId": 79349
-  },
-  {
-    "title": "Haunted Hotel",
-    "tvdbId": 450671
-  },
-  {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
-  },
-  {
-    "title": "The Studio",
-    "tvdbId": 448147
-  },
-  {
-    "title": "Chief of War",
-    "tvdbId": 418633
-  },
-  {
-    "title": "The Morning Show",
-    "tvdbId": 361563
-  },
-  {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
+    "title": "Marvel Zombies",
+    "tvdbId": 412428
   },
   {
     "title": "Slow Horses",
     "tvdbId": 372264
   },
   {
+    "title": "Gen V",
+    "tvdbId": 417909
+  },
+  {
+    "title": "The Terminal List: Dark Wolf",
+    "tvdbId": 464185
+  },
+  {
+    "title": "Only Murders in the Building",
+    "tvdbId": 399959
+  },
+  {
+    "title": "The Lowdown",
+    "tvdbId": 463649
+  },
+  {
+    "title": "Breaking Bad",
+    "tvdbId": 81189
+  },
+  {
+    "title": "The Girlfriend",
+    "tvdbId": 449706
+  },
+  {
+    "title": "Tulsa King",
+    "tvdbId": 413215
+  },
+  {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
+  },
+  {
+    "title": "The Summer I Turned Pretty",
+    "tvdbId": 396505
+  },
+  {
+    "title": "Dexter",
+    "tvdbId": 79349
+  },
+  {
+    "title": "Dexter: Resurrection",
+    "tvdbId": 452595
+  },
+  {
+    "title": "The Pitt",
+    "tvdbId": 448176
+  },
+  {
     "title": "Stranger Things",
     "tvdbId": 305288
   },
   {
-    "title": "Demon Slayer: Kimetsu no Yaiba",
-    "tvdbId": 348545
+    "title": "Haunted Hotel",
+    "tvdbId": 450671
+  },
+  {
+    "title": "The Morning Show",
+    "tvdbId": 361563
   }
 ]
