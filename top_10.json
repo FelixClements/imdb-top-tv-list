@@ -1,5 +1,9 @@
 [
   {
+    "title": "Monster",
+    "tvdbId": 389492
+  },
+  {
     "title": "Wayward",
     "tvdbId": 433309
   },
@@ -8,32 +12,28 @@
     "tvdbId": 447594
   },
   {
-    "title": "Black Rabbit",
-    "tvdbId": 447579
+    "title": "Peacemaker",
+    "tvdbId": 391153
   },
   {
-    "title": "Alien: Earth",
-    "tvdbId": 458912
+    "title": "Black Rabbit",
+    "tvdbId": 447579
   },
   {
     "title": "Task",
     "tvdbId": 451873
   },
   {
-    "title": "Peacemaker",
-    "tvdbId": 391153
-  },
-  {
     "title": "Wednesday",
     "tvdbId": 397060
   },
   {
-    "title": "Marvel Zombies",
-    "tvdbId": 412428
-  },
-  {
     "title": "Slow Horses",
     "tvdbId": 372264
+  },
+  {
+    "title": "Alien: Earth",
+    "tvdbId": 458912
   },
   {
     "title": "Gen V",

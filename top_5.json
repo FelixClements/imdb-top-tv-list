@@ -1,5 +1,9 @@
 [
   {
+    "title": "Monster",
+    "tvdbId": 389492
+  },
+  {
     "title": "Wayward",
     "tvdbId": 433309
   },
@@ -8,15 +12,11 @@
     "tvdbId": 447594
   },
   {
+    "title": "Peacemaker",
+    "tvdbId": 391153
+  },
+  {
     "title": "Black Rabbit",
     "tvdbId": 447579
-  },
-  {
-    "title": "Alien: Earth",
-    "tvdbId": 458912
-  },
-  {
-    "title": "Task",
-    "tvdbId": 451873
   }
 ]

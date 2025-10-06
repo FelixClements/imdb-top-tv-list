@@ -1,5 +1,9 @@
 [
   {
+    "title": "Monster",
+    "tvdbId": 389492
+  },
+  {
     "title": "Wayward",
     "tvdbId": 433309
   },
@@ -8,91 +12,87 @@
     "tvdbId": 447594
   },
   {
-    "title": "Black Rabbit",
-    "tvdbId": 447579
+    "title": "Peacemaker",
+    "tvdbId": 391153
   },
   {
-    "title": "Alien: Earth",
-    "tvdbId": 458912
+    "title": "Black Rabbit",
+    "tvdbId": 447579
   },
   {
     "title": "Task",
     "tvdbId": 451873
   },
   {
-    "title": "Peacemaker",
-    "tvdbId": 391153
-  },
-  {
     "title": "Wednesday",
     "tvdbId": 397060
-  },
-  {
-    "title": "Marvel Zombies",
-    "tvdbId": 412428
   },
   {
     "title": "Slow Horses",
     "tvdbId": 372264
   },
   {
+    "title": "Alien: Earth",
+    "tvdbId": 458912
+  },
+  {
     "title": "Gen V",
     "tvdbId": 417909
   },
   {
-    "title": "The Terminal List: Dark Wolf",
-    "tvdbId": 464185
+    "title": "Chad Powers",
+    "tvdbId": 446526
   },
   {
     "title": "Only Murders in the Building",
     "tvdbId": 399959
   },
   {
-    "title": "The Lowdown",
-    "tvdbId": 463649
+    "title": "Game of Thrones",
+    "tvdbId": 121361
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
-    "title": "The Girlfriend",
-    "tvdbId": 449706
+    "title": "Dexter",
+    "tvdbId": 79349
   },
   {
     "title": "Tulsa King",
     "tvdbId": 413215
   },
   {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
-    "title": "The Summer I Turned Pretty",
-    "tvdbId": 396505
+    "title": "The Terminal List: Dark Wolf",
+    "tvdbId": 464185
   },
   {
-    "title": "Dexter",
-    "tvdbId": 79349
+    "title": "Marvel Zombies",
+    "tvdbId": 412428
+  },
+  {
+    "title": "The Girlfriend",
+    "tvdbId": 449706
+  },
+  {
+    "title": "The Lowdown",
+    "tvdbId": 463649
   },
   {
     "title": "Dexter: Resurrection",
     "tvdbId": 452595
   },
   {
-    "title": "The Pitt",
-    "tvdbId": 448176
-  },
-  {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
-    "title": "Haunted Hotel",
-    "tvdbId": 450671
-  },
-  {
     "title": "The Morning Show",
     "tvdbId": 361563
+  },
+  {
+    "title": "The Pitt",
+    "tvdbId": 448176
   }
 ]
