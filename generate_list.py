@@ -42,7 +42,7 @@ from bs4 import BeautifulSoup
 DEFAULT_COUNT = 25                           # how many titles we want
 DEFAULT_OUTPUT = "top_25.json"               # name of the generated file
 IMDB_POPULAR_URL = (
-    "https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries,tv_short,tv_movie,tv_episode&languages=en&count={count}"
+    "https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries,tv_short,tv_movie,tv_episode,tv_special,short&user_rating=5,&languages=en&count={count}"
 )
 DEFAULT_USER_AGENT = (
     "Mozilla/5.0 (compatible; imdb-tv-list/1.0; +https://github.com/youruser/imdb-top-tv-list)"
