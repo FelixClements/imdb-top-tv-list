@@ -32,14 +32,6 @@
     "tvdbId": 447579
   },
   {
-    "title": "Wonder Man",
-    "tvdbId": 428629
-  },
-  {
-    "title": "A Knight of the Seven Kingdoms",
-    "tvdbId": 433631
-  },
-  {
     "title": "Slow Horses",
     "tvdbId": 372264
   },
@@ -94,5 +86,13 @@
   {
     "title": "Dexter: Resurrection",
     "tvdbId": 452595
+  },
+  {
+    "title": "The Morning Show",
+    "tvdbId": 361563
+  },
+  {
+    "title": "The Terminal List: Dark Wolf",
+    "tvdbId": 464185
   }
 ]
