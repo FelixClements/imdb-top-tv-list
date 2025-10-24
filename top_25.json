@@ -56,6 +56,10 @@
     "tvdbId": 399959
   },
   {
+    "title": "The Chair Company",
+    "tvdbId": 454397
+  },
+  {
     "title": "Black Rabbit",
     "tvdbId": 447579
   },
@@ -90,9 +94,5 @@
   {
     "title": "Alien: Earth",
     "tvdbId": 458912
-  },
-  {
-    "title": "The Morning Show",
-    "tvdbId": 361563
   }
 ]
