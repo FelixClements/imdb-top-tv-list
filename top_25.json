@@ -28,6 +28,10 @@
     "tvdbId": 372264
   },
   {
+    "title": "Lazarus",
+    "tvdbId": 445873
+  },
+  {
     "title": "Gen V",
     "tvdbId": 417909
   },
@@ -94,9 +98,5 @@
   {
     "title": "Chad Powers",
     "tvdbId": 446526
-  },
-  {
-    "title": "Black Rabbit",
-    "tvdbId": 447579
   }
 ]
