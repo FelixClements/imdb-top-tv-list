@@ -1,11 +1,31 @@
 [
   {
-    "title": "Task",
-    "tvdbId": 451873
+    "title": "It: Welcome to Derry",
+    "tvdbId": 418424
+  },
+  {
+    "title": "The Witcher",
+    "tvdbId": 362696
+  },
+  {
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "Nobody Wants This",
     "tvdbId": 450093
+  },
+  {
+    "title": "South Park",
+    "tvdbId": 75897
+  },
+  {
+    "title": "Slow Horses",
+    "tvdbId": 372264
+  },
+  {
+    "title": "Task",
+    "tvdbId": 451873
   },
   {
     "title": "Monster",
@@ -18,25 +38,5 @@
   {
     "title": "Boots",
     "tvdbId": 434473
-  },
-  {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
-    "title": "Slow Horses",
-    "tvdbId": 372264
-  },
-  {
-    "title": "Lazarus",
-    "tvdbId": 445873
-  },
-  {
-    "title": "Gen V",
-    "tvdbId": 417909
-  },
-  {
-    "title": "The Last Frontier",
-    "tvdbId": 431488
   }
 ]

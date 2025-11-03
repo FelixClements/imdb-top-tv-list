@@ -1,11 +1,31 @@
 [
   {
-    "title": "Task",
-    "tvdbId": 451873
+    "title": "It: Welcome to Derry",
+    "tvdbId": 418424
+  },
+  {
+    "title": "The Witcher",
+    "tvdbId": 362696
+  },
+  {
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "Nobody Wants This",
     "tvdbId": 450093
+  },
+  {
+    "title": "South Park",
+    "tvdbId": 75897
+  },
+  {
+    "title": "Slow Horses",
+    "tvdbId": 372264
+  },
+  {
+    "title": "Task",
+    "tvdbId": 451873
   },
   {
     "title": "Monster",
@@ -20,30 +40,6 @@
     "tvdbId": 434473
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
-    "title": "Slow Horses",
-    "tvdbId": 372264
-  },
-  {
-    "title": "Lazarus",
-    "tvdbId": 445873
-  },
-  {
-    "title": "Gen V",
-    "tvdbId": 417909
-  },
-  {
-    "title": "The Last Frontier",
-    "tvdbId": 431488
-  },
-  {
-    "title": "It: Welcome to Derry",
-    "tvdbId": 418424
-  },
-  {
     "title": "Only Murders in the Building",
     "tvdbId": 399959
   },
@@ -52,51 +48,55 @@
     "tvdbId": 121361
   },
   {
-    "title": "Devil in Disguise: John Wayne Gacy",
-    "tvdbId": 446150
+    "title": "The Last Frontier",
+    "tvdbId": 431488
   },
   {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
-  },
-  {
-    "title": "House of Guinness",
-    "tvdbId": 447594
+    "title": "Lazarus",
+    "tvdbId": 445873
   },
   {
     "title": "High Potential",
     "tvdbId": 434988
   },
   {
-    "title": "Wednesday",
-    "tvdbId": 397060
+    "title": "Breaking Bad",
+    "tvdbId": 81189
   },
   {
     "title": "Tulsa King",
     "tvdbId": 413215
   },
   {
-    "title": "Wayward",
-    "tvdbId": 433309
+    "title": "Wednesday",
+    "tvdbId": 397060
   },
   {
-    "title": "South Park",
-    "tvdbId": 75897
+    "title": "Chad Powers",
+    "tvdbId": 446526
   },
   {
     "title": "Dexter",
     "tvdbId": 79349
   },
   {
+    "title": "Mayor of Kingstown",
+    "tvdbId": 386630
+  },
+  {
+    "title": "Devil in Disguise: John Wayne Gacy",
+    "tvdbId": 446150
+  },
+  {
+    "title": "House of Guinness",
+    "tvdbId": 447594
+  },
+  {
+    "title": "Gen V",
+    "tvdbId": 417909
+  },
+  {
     "title": "The Chair Company",
     "tvdbId": 454397
-  },
-  {
-    "title": "My Hero Academia",
-    "tvdbId": 305074
-  },
-  {
-    "title": "Chad Powers",
-    "tvdbId": 446526
   }
 ]
