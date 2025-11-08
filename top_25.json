@@ -76,6 +76,10 @@
     "tvdbId": 446526
   },
   {
+    "title": "Pluribus",
+    "tvdbId": 436457
+  },
+  {
     "title": "Dexter",
     "tvdbId": 79349
   },
@@ -94,9 +98,5 @@
   {
     "title": "Gen V",
     "tvdbId": 417909
-  },
-  {
-    "title": "The Chair Company",
-    "tvdbId": 454397
   }
 ]
