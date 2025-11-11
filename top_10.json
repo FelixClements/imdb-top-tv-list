@@ -1,19 +1,27 @@
 [
   {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
+    "title": "Pluribus",
+    "tvdbId": 436457
   },
   {
     "title": "The Witcher",
     "tvdbId": 362696
   },
   {
+    "title": "IT: Welcome to Derry",
+    "tvdbId": 418424
+  },
+  {
     "title": "Stranger Things",
     "tvdbId": 305288
   },
   {
-    "title": "Nobody Wants This",
-    "tvdbId": 450093
+    "title": "All Her Fault",
+    "tvdbId": 446149
+  },
+  {
+    "title": "Death by Lightning",
+    "tvdbId": 445592
   },
   {
     "title": "South Park",
@@ -24,19 +32,11 @@
     "tvdbId": 372264
   },
   {
+    "title": "Nobody Wants This",
+    "tvdbId": 450093
+  },
+  {
     "title": "Task",
     "tvdbId": 451873
-  },
-  {
-    "title": "Monster",
-    "tvdbId": 389492
-  },
-  {
-    "title": "The Diplomat",
-    "tvdbId": 415239
-  },
-  {
-    "title": "Boots",
-    "tvdbId": 434473
   }
 ]
