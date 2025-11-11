@@ -16,14 +16,6 @@
     "tvdbId": 305288
   },
   {
-    "title": "All Her Fault",
-    "tvdbId": 446149
-  },
-  {
-    "title": "Death by Lightning",
-    "tvdbId": 445592
-  },
-  {
     "title": "South Park",
     "tvdbId": 75897
   },
@@ -38,5 +30,13 @@
   {
     "title": "Task",
     "tvdbId": 451873
+  },
+  {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
+  },
+  {
+    "title": "Breaking Bad",
+    "tvdbId": 81189
   }
 ]

@@ -16,14 +16,6 @@
     "tvdbId": 305288
   },
   {
-    "title": "All Her Fault",
-    "tvdbId": 446149
-  },
-  {
-    "title": "Death by Lightning",
-    "tvdbId": 445592
-  },
-  {
     "title": "South Park",
     "tvdbId": 75897
   },
@@ -60,10 +52,6 @@
     "tvdbId": 413215
   },
   {
-    "title": "The Last Frontier",
-    "tvdbId": 431488
-  },
-  {
     "title": "High Potential",
     "tvdbId": 434988
   },
@@ -74,10 +62,6 @@
   {
     "title": "Boots",
     "tvdbId": 434473
-  },
-  {
-    "title": "Lazarus",
-    "tvdbId": 445873
   },
   {
     "title": "Dexter",
@@ -96,7 +80,23 @@
     "tvdbId": 361563
   },
   {
-    "title": "Chad Powers",
-    "tvdbId": 446526
+    "title": "Mayor of Kingstown",
+    "tvdbId": 386630
+  },
+  {
+    "title": "The Night Manager",
+    "tvdbId": 290508
+  },
+  {
+    "title": "Wednesday",
+    "tvdbId": 397060
+  },
+  {
+    "title": "My Hero Academia",
+    "tvdbId": 305074
+  },
+  {
+    "title": "Grey's Anatomy",
+    "tvdbId": 73762
   }
 ]
