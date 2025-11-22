@@ -4,6 +4,10 @@
     "tvdbId": 436457
   },
   {
+    "title": "The Beast in Me",
+    "tvdbId": 448245
+  },
+  {
     "title": "Stranger Things",
     "tvdbId": 305288
   },
@@ -14,9 +18,5 @@
   {
     "title": "The Witcher",
     "tvdbId": 362696
-  },
-  {
-    "title": "Fallout",
-    "tvdbId": 416744
   }
 ]
