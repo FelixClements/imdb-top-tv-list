@@ -1,5 +1,9 @@
 [
   {
+    "title": "Stranger Things",
+    "tvdbId": 305288
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
   },
@@ -8,15 +12,11 @@
     "tvdbId": 448245
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "IT: Welcome to Derry",
     "tvdbId": 418424
   },
   {
-    "title": "All Her Fault",
-    "tvdbId": 446149
+    "title": "A Man on the Inside",
+    "tvdbId": 445646
   }
 ]

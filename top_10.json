@@ -1,5 +1,9 @@
 [
   {
+    "title": "Stranger Things",
+    "tvdbId": 305288
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
   },
@@ -8,16 +12,8 @@
     "tvdbId": 448245
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "IT: Welcome to Derry",
     "tvdbId": 418424
-  },
-  {
-    "title": "All Her Fault",
-    "tvdbId": 446149
   },
   {
     "title": "A Man on the Inside",
@@ -28,15 +24,19 @@
     "tvdbId": 397424
   },
   {
-    "title": "Absentia",
-    "tvdbId": 330500
-  },
-  {
-    "title": "One Punch Man",
-    "tvdbId": 293088
+    "title": "All Her Fault",
+    "tvdbId": 446149
   },
   {
     "title": "My Hero Academia",
     "tvdbId": 305074
+  },
+  {
+    "title": "Absentia",
+    "tvdbId": 330500
+  },
+  {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
   }
 ]

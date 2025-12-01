@@ -1,5 +1,9 @@
 [
   {
+    "title": "Stranger Things",
+    "tvdbId": 305288
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
   },
@@ -8,16 +12,8 @@
     "tvdbId": 448245
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "IT: Welcome to Derry",
     "tvdbId": 418424
-  },
-  {
-    "title": "All Her Fault",
-    "tvdbId": 446149
   },
   {
     "title": "A Man on the Inside",
@@ -28,32 +24,40 @@
     "tvdbId": 397424
   },
   {
-    "title": "Absentia",
-    "tvdbId": 330500
-  },
-  {
-    "title": "One Punch Man",
-    "tvdbId": 293088
+    "title": "All Her Fault",
+    "tvdbId": 446149
   },
   {
     "title": "My Hero Academia",
     "tvdbId": 305074
   },
   {
-    "title": "The Witcher",
-    "tvdbId": 362696
+    "title": "Absentia",
+    "tvdbId": 330500
   },
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
   },
   {
+    "title": "Breaking Bad",
+    "tvdbId": 81189
+  },
+  {
     "title": "Tulsa King",
     "tvdbId": 413215
   },
   {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
+    "title": "One Punch Man",
+    "tvdbId": 293088
+  },
+  {
+    "title": "The Witcher",
+    "tvdbId": 362696
+  },
+  {
+    "title": "Homeland",
+    "tvdbId": 247897
   },
   {
     "title": "Mr. Mercedes",
@@ -64,39 +68,35 @@
     "tvdbId": 372264
   },
   {
-    "title": "The Morning Show",
-    "tvdbId": 361563
-  },
-  {
     "title": "Fallout",
     "tvdbId": 416744
+  },
+  {
+    "title": "Yellowstone",
+    "tvdbId": 341164
   },
   {
     "title": "Task",
     "tvdbId": 451873
   },
   {
-    "title": "Hazbin Hotel",
-    "tvdbId": 358805
-  },
-  {
-    "title": "Homeland",
-    "tvdbId": 247897
-  },
-  {
     "title": "Better Call Saul",
     "tvdbId": 273181
+  },
+  {
+    "title": "Mayor of Kingstown",
+    "tvdbId": 386630
   },
   {
     "title": "Dexter",
     "tvdbId": 79349
   },
   {
-    "title": "The Diplomat",
-    "tvdbId": 415239
+    "title": "Attack on Titan",
+    "tvdbId": 267440
   },
   {
-    "title": "Mayor of Kingstown",
-    "tvdbId": 386630
+    "title": "The Sopranos",
+    "tvdbId": 75299
   }
 ]
