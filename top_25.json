@@ -64,6 +64,10 @@
     "tvdbId": 327109
   },
   {
+    "title": "Death by Lightning",
+    "tvdbId": 445592
+  },
+  {
     "title": "Slow Horses",
     "tvdbId": 372264
   },
@@ -94,9 +98,5 @@
   {
     "title": "Attack on Titan",
     "tvdbId": 267440
-  },
-  {
-    "title": "The Sopranos",
-    "tvdbId": 75299
   }
 ]
