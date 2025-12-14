@@ -60,6 +60,10 @@
     "tvdbId": 247897
   },
   {
+    "title": "The Chair Company",
+    "tvdbId": 454397
+  },
+  {
     "title": "The Boys",
     "tvdbId": 355567
   },
@@ -94,9 +98,5 @@
   {
     "title": "The Pitt",
     "tvdbId": 448176
-  },
-  {
-    "title": "Task",
-    "tvdbId": 451873
   }
 ]
