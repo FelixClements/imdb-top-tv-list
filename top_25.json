@@ -44,6 +44,10 @@
     "tvdbId": 81189
   },
   {
+    "title": "Man vs Baby",
+    "tvdbId": 457885
+  },
+  {
     "title": "The Pitt",
     "tvdbId": 448176
   },
@@ -94,9 +98,5 @@
   {
     "title": "Mr. Mercedes",
     "tvdbId": 327109
-  },
-  {
-    "title": "Slow Horses",
-    "tvdbId": 372264
   }
 ]
