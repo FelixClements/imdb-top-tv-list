@@ -8,52 +8,44 @@
     "tvdbId": 436457
   },
   {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
+    "title": "Heated Rivalry",
+    "tvdbId": 464461
   },
   {
     "title": "Fallout",
     "tvdbId": 416744
   },
   {
-    "title": "Heated Rivalry",
-    "tvdbId": 464461
+    "title": "IT: Welcome to Derry",
+    "tvdbId": 418424
   },
   {
     "title": "Landman",
     "tvdbId": 397424
   },
   {
-    "title": "Emily in Paris",
-    "tvdbId": 364439
-  },
-  {
-    "title": "The Beast in Me",
-    "tvdbId": 448245
-  },
-  {
     "title": "Game of Thrones",
     "tvdbId": 121361
-  },
-  {
-    "title": "Percy Jackson and the Olympians",
-    "tvdbId": 415151
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
-    "title": "Man vs Baby",
-    "tvdbId": 457885
+    "title": "The Beast in Me",
+    "tvdbId": 448245
+  },
+  {
+    "title": "Emily in Paris",
+    "tvdbId": 364439
   },
   {
     "title": "The Pitt",
     "tvdbId": 448176
   },
   {
-    "title": "All Her Fault",
-    "tvdbId": 446149
+    "title": "Percy Jackson and the Olympians",
+    "tvdbId": 415151
   },
   {
     "title": "Mayor of Kingstown",
@@ -64,6 +56,10 @@
     "tvdbId": 247897
   },
   {
+    "title": "All Her Fault",
+    "tvdbId": 446149
+  },
+  {
     "title": "Severance",
     "tvdbId": 371980
   },
@@ -72,31 +68,35 @@
     "tvdbId": 269613
   },
   {
-    "title": "The Boys",
-    "tvdbId": 355567
-  },
-  {
     "title": "Better Call Saul",
     "tvdbId": 273181
-  },
-  {
-    "title": "My Hero Academia",
-    "tvdbId": 305074
   },
   {
     "title": "The White Lotus",
     "tvdbId": 390430
   },
   {
-    "title": "Younger",
-    "tvdbId": 280706
+    "title": "The Boys",
+    "tvdbId": 355567
+  },
+  {
+    "title": "Slow Horses",
+    "tvdbId": 372264
   },
   {
     "title": "Mad Men",
     "tvdbId": 80337
   },
   {
-    "title": "Mr. Mercedes",
-    "tvdbId": 327109
+    "title": "Man vs Baby",
+    "tvdbId": 457885
+  },
+  {
+    "title": "The Sopranos",
+    "tvdbId": 75299
+  },
+  {
+    "title": "Dexter",
+    "tvdbId": 79349
   }
 ]
