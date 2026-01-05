@@ -4,6 +4,10 @@
     "tvdbId": 305288
   },
   {
+    "title": "Fallout",
+    "tvdbId": 416744
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
   },
@@ -12,16 +16,16 @@
     "tvdbId": 464461
   },
   {
-    "title": "Fallout",
-    "tvdbId": 416744
+    "title": "Landman",
+    "tvdbId": 397424
+  },
+  {
+    "title": "The Night Manager",
+    "tvdbId": 290508
   },
   {
     "title": "IT: Welcome to Derry",
     "tvdbId": 418424
-  },
-  {
-    "title": "Landman",
-    "tvdbId": 397424
   },
   {
     "title": "Game of Thrones",
@@ -36,10 +40,6 @@
     "tvdbId": 448245
   },
   {
-    "title": "Emily in Paris",
-    "tvdbId": 364439
-  },
-  {
     "title": "The Pitt",
     "tvdbId": 448176
   },
@@ -48,28 +48,40 @@
     "tvdbId": 415151
   },
   {
-    "title": "Mayor of Kingstown",
-    "tvdbId": 386630
-  },
-  {
-    "title": "Homeland",
-    "tvdbId": 247897
+    "title": "Dark",
+    "tvdbId": 334824
   },
   {
     "title": "All Her Fault",
     "tvdbId": 446149
   },
   {
+    "title": "Mayor of Kingstown",
+    "tvdbId": 386630
+  },
+  {
     "title": "Severance",
     "tvdbId": 371980
   },
   {
-    "title": "Fargo",
-    "tvdbId": 269613
+    "title": "Homeland",
+    "tvdbId": 247897
   },
   {
     "title": "Better Call Saul",
     "tvdbId": 273181
+  },
+  {
+    "title": "The Rookie",
+    "tvdbId": 350665
+  },
+  {
+    "title": "Emily in Paris",
+    "tvdbId": 364439
+  },
+  {
+    "title": "Fargo",
+    "tvdbId": 269613
   },
   {
     "title": "The White Lotus",
@@ -80,23 +92,11 @@
     "tvdbId": 355567
   },
   {
-    "title": "Slow Horses",
-    "tvdbId": 372264
-  },
-  {
-    "title": "Mad Men",
-    "tvdbId": 80337
-  },
-  {
-    "title": "Man vs Baby",
-    "tvdbId": 457885
-  },
-  {
     "title": "The Sopranos",
     "tvdbId": 75299
   },
   {
-    "title": "Dexter",
-    "tvdbId": 79349
+    "title": "Attack on Titan",
+    "tvdbId": 267440
   }
 ]

@@ -4,6 +4,10 @@
     "tvdbId": 305288
   },
   {
+    "title": "Fallout",
+    "tvdbId": 416744
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
   },
@@ -12,16 +16,16 @@
     "tvdbId": 464461
   },
   {
-    "title": "Fallout",
-    "tvdbId": 416744
+    "title": "Landman",
+    "tvdbId": 397424
+  },
+  {
+    "title": "The Night Manager",
+    "tvdbId": 290508
   },
   {
     "title": "IT: Welcome to Derry",
     "tvdbId": 418424
-  },
-  {
-    "title": "Landman",
-    "tvdbId": 397424
   },
   {
     "title": "Game of Thrones",
@@ -34,9 +38,5 @@
   {
     "title": "The Beast in Me",
     "tvdbId": 448245
-  },
-  {
-    "title": "Emily in Paris",
-    "tvdbId": 364439
   }
 ]
