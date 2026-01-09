@@ -60,6 +60,10 @@
     "tvdbId": 386630
   },
   {
+    "title": "Red Eye",
+    "tvdbId": 436469
+  },
+  {
     "title": "Severance",
     "tvdbId": 371980
   },
@@ -94,9 +98,5 @@
   {
     "title": "The Sopranos",
     "tvdbId": 75299
-  },
-  {
-    "title": "Attack on Titan",
-    "tvdbId": 267440
   }
 ]
