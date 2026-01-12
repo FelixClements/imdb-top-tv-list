@@ -4,12 +4,16 @@
     "tvdbId": 305288
   },
   {
-    "title": "Fallout",
-    "tvdbId": 416744
+    "title": "Run Away",
+    "tvdbId": 445068
   },
   {
-    "title": "Pluribus",
-    "tvdbId": 436457
+    "title": "The Pitt",
+    "tvdbId": 448176
+  },
+  {
+    "title": "Fallout",
+    "tvdbId": 416744
   },
   {
     "title": "Heated Rivalry",
@@ -20,32 +24,40 @@
     "tvdbId": 397424
   },
   {
+    "title": "Pluribus",
+    "tvdbId": 436457
+  },
+  {
     "title": "The Night Manager",
     "tvdbId": 290508
-  },
-  {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
-  },
-  {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
+  },
+  {
+    "title": "11.22.63",
+    "tvdbId": 301824
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "tvdbId": 377543
+  },
+  {
+    "title": "IT: Welcome to Derry",
+    "tvdbId": 418424
+  },
+  {
+    "title": "The Rookie",
+    "tvdbId": 350665
+  },
+  {
     "title": "The Beast in Me",
     "tvdbId": 448245
-  },
-  {
-    "title": "The Pitt",
-    "tvdbId": 448176
-  },
-  {
-    "title": "Percy Jackson and the Olympians",
-    "tvdbId": 415151
   },
   {
     "title": "Dark",
@@ -56,47 +68,35 @@
     "tvdbId": 446149
   },
   {
-    "title": "Mayor of Kingstown",
-    "tvdbId": 386630
+    "title": "Percy Jackson and the Olympians",
+    "tvdbId": 415151
   },
   {
-    "title": "Red Eye",
-    "tvdbId": 436469
-  },
-  {
-    "title": "Severance",
-    "tvdbId": 371980
-  },
-  {
-    "title": "Homeland",
-    "tvdbId": 247897
+    "title": "Industry",
+    "tvdbId": 371796
   },
   {
     "title": "Better Call Saul",
     "tvdbId": 273181
   },
   {
-    "title": "The Rookie",
-    "tvdbId": 350665
-  },
-  {
-    "title": "Emily in Paris",
-    "tvdbId": 364439
-  },
-  {
-    "title": "Fargo",
-    "tvdbId": 269613
+    "title": "Attack on Titan",
+    "tvdbId": 267440
   },
   {
     "title": "The White Lotus",
     "tvdbId": 390430
   },
   {
-    "title": "The Boys",
-    "tvdbId": 355567
+    "title": "Homeland",
+    "tvdbId": 247897
   },
   {
-    "title": "The Sopranos",
-    "tvdbId": 75299
+    "title": "Tehran",
+    "tvdbId": 380010
+  },
+  {
+    "title": "Fargo",
+    "tvdbId": 269613
   }
 ]

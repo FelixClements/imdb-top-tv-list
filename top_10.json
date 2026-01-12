@@ -4,12 +4,16 @@
     "tvdbId": 305288
   },
   {
-    "title": "Fallout",
-    "tvdbId": 416744
+    "title": "Run Away",
+    "tvdbId": 445068
   },
   {
-    "title": "Pluribus",
-    "tvdbId": 436457
+    "title": "The Pitt",
+    "tvdbId": 448176
+  },
+  {
+    "title": "Fallout",
+    "tvdbId": 416744
   },
   {
     "title": "Heated Rivalry",
@@ -20,23 +24,19 @@
     "tvdbId": 397424
   },
   {
+    "title": "Pluribus",
+    "tvdbId": 436457
+  },
+  {
     "title": "The Night Manager",
     "tvdbId": 290508
-  },
-  {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
-  },
-  {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
-    "title": "The Beast in Me",
-    "tvdbId": 448245
+    "title": "Game of Thrones",
+    "tvdbId": 121361
   }
 ]
