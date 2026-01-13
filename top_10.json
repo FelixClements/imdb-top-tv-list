@@ -4,6 +4,10 @@
     "tvdbId": 305288
   },
   {
+    "title": "His & Hers",
+    "tvdbId": 452521
+  },
+  {
     "title": "Run Away",
     "tvdbId": 445068
   },
@@ -34,9 +38,5 @@
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
-  },
-  {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
   }
 ]
