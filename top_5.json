@@ -1,15 +1,11 @@
 [
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "His & Hers",
     "tvdbId": 452521
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "The Pitt",
@@ -18,5 +14,9 @@
   {
     "title": "Fallout",
     "tvdbId": 416744
+  },
+  {
+    "title": "The Night Manager",
+    "tvdbId": 290508
   }
 ]

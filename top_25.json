@@ -1,15 +1,11 @@
 [
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "His & Hers",
     "tvdbId": 452521
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "The Pitt",
@@ -20,28 +16,40 @@
     "tvdbId": 416744
   },
   {
-    "title": "Heated Rivalry",
-    "tvdbId": 464461
+    "title": "The Night Manager",
+    "tvdbId": 290508
   },
   {
     "title": "Landman",
     "tvdbId": 397424
   },
   {
-    "title": "Pluribus",
-    "tvdbId": 436457
+    "title": "Heated Rivalry",
+    "tvdbId": 464461
   },
   {
-    "title": "The Night Manager",
-    "tvdbId": 290508
+    "title": "Run Away",
+    "tvdbId": 445068
+  },
+  {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
+  },
+  {
+    "title": "Pluribus",
+    "tvdbId": 436457
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
+    "title": "Hijack",
+    "tvdbId": 419254
+  },
+  {
+    "title": "Tell Me Lies",
+    "tvdbId": 393269
   },
   {
     "title": "11.22.63",
@@ -52,20 +60,32 @@
     "tvdbId": 377543
   },
   {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
+    "title": "Industry",
+    "tvdbId": 371796
   },
   {
     "title": "The Rookie",
     "tvdbId": 350665
   },
   {
+    "title": "Euphoria",
+    "tvdbId": 360261
+  },
+  {
     "title": "The Beast in Me",
     "tvdbId": 448245
   },
   {
-    "title": "Dark",
-    "tvdbId": 334824
+    "title": "High Potential",
+    "tvdbId": 434988
+  },
+  {
+    "title": "IT: Welcome to Derry",
+    "tvdbId": 418424
+  },
+  {
+    "title": "The White Lotus",
+    "tvdbId": 390430
   },
   {
     "title": "All Her Fault",
@@ -76,27 +96,7 @@
     "tvdbId": 415151
   },
   {
-    "title": "Industry",
-    "tvdbId": 371796
-  },
-  {
-    "title": "Better Call Saul",
-    "tvdbId": 273181
-  },
-  {
-    "title": "Attack on Titan",
-    "tvdbId": 267440
-  },
-  {
-    "title": "The White Lotus",
-    "tvdbId": 390430
-  },
-  {
-    "title": "Homeland",
-    "tvdbId": 247897
-  },
-  {
-    "title": "Tehran",
-    "tvdbId": 380010
+    "title": "Dark",
+    "tvdbId": 334824
   }
 ]

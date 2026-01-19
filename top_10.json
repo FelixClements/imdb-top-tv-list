@@ -1,15 +1,11 @@
 [
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "His & Hers",
     "tvdbId": 452521
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "The Pitt",
@@ -20,23 +16,27 @@
     "tvdbId": 416744
   },
   {
-    "title": "Heated Rivalry",
-    "tvdbId": 464461
+    "title": "The Night Manager",
+    "tvdbId": 290508
   },
   {
     "title": "Landman",
     "tvdbId": 397424
   },
   {
+    "title": "Heated Rivalry",
+    "tvdbId": 464461
+  },
+  {
+    "title": "Run Away",
+    "tvdbId": 445068
+  },
+  {
+    "title": "Game of Thrones",
+    "tvdbId": 121361
+  },
+  {
     "title": "Pluribus",
     "tvdbId": 436457
-  },
-  {
-    "title": "The Night Manager",
-    "tvdbId": 290508
-  },
-  {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
   }
 ]
