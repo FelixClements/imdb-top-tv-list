@@ -1,5 +1,9 @@
 [
   {
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
+  },
+  {
     "title": "His & Hers",
     "tvdbId": 452521
   },
@@ -34,9 +38,5 @@
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
-  },
-  {
-    "title": "Pluribus",
-    "tvdbId": 436457
   }
 ]

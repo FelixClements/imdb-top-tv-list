@@ -1,5 +1,9 @@
 [
   {
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
+  },
+  {
     "title": "His & Hers",
     "tvdbId": 452521
   },
@@ -34,6 +38,10 @@
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
+  },
+  {
+    "title": "A Knight of the Seven Kingdoms",
+    "tvdbId": 433631
   },
   {
     "title": "Pluribus",
@@ -90,13 +98,5 @@
   {
     "title": "All Her Fault",
     "tvdbId": 446149
-  },
-  {
-    "title": "Percy Jackson and the Olympians",
-    "tvdbId": 415151
-  },
-  {
-    "title": "Dark",
-    "tvdbId": 334824
   }
 ]
