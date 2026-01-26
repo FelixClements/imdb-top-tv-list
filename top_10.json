@@ -1,19 +1,27 @@
 [
   {
-    "title": "Agatha Christie's Seven Dials",
-    "tvdbId": 448466
+    "title": "A Knight of the Seven Kingdoms",
+    "tvdbId": 433631
   },
   {
     "title": "His & Hers",
     "tvdbId": 452521
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "The Pitt",
     "tvdbId": 448176
+  },
+  {
+    "title": "Landman",
+    "tvdbId": 397424
+  },
+  {
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
+  },
+  {
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "Fallout",
@@ -24,19 +32,11 @@
     "tvdbId": 290508
   },
   {
-    "title": "Landman",
-    "tvdbId": 397424
-  },
-  {
     "title": "Heated Rivalry",
     "tvdbId": 464461
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
-  },
-  {
-    "title": "Game of Thrones",
-    "tvdbId": 121361
+    "title": "Jujutsu Kaisen",
+    "tvdbId": 377543
   }
 ]

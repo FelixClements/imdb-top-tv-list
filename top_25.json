@@ -1,19 +1,27 @@
 [
   {
-    "title": "Agatha Christie's Seven Dials",
-    "tvdbId": 448466
+    "title": "A Knight of the Seven Kingdoms",
+    "tvdbId": 433631
   },
   {
     "title": "His & Hers",
     "tvdbId": 452521
   },
   {
-    "title": "Stranger Things",
-    "tvdbId": 305288
-  },
-  {
     "title": "The Pitt",
     "tvdbId": 448176
+  },
+  {
+    "title": "Landman",
+    "tvdbId": 397424
+  },
+  {
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
+  },
+  {
+    "title": "Stranger Things",
+    "tvdbId": 305288
   },
   {
     "title": "Fallout",
@@ -24,32 +32,36 @@
     "tvdbId": 290508
   },
   {
-    "title": "Landman",
-    "tvdbId": 397424
-  },
-  {
     "title": "Heated Rivalry",
     "tvdbId": 464461
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Jujutsu Kaisen",
+    "tvdbId": 377543
   },
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
   },
   {
-    "title": "A Knight of the Seven Kingdoms",
-    "tvdbId": 433631
+    "title": "Breaking Bad",
+    "tvdbId": 81189
   },
   {
     "title": "Pluribus",
     "tvdbId": 436457
   },
   {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
+    "title": "Run Away",
+    "tvdbId": 445068
+  },
+  {
+    "title": "The Rookie",
+    "tvdbId": 350665
+  },
+  {
+    "title": "Percy Jackson and the Olympians",
+    "tvdbId": 415151
   },
   {
     "title": "Hijack",
@@ -64,36 +76,24 @@
     "tvdbId": 301824
   },
   {
-    "title": "Jujutsu Kaisen",
-    "tvdbId": 377543
-  },
-  {
     "title": "Industry",
     "tvdbId": 371796
-  },
-  {
-    "title": "The Rookie",
-    "tvdbId": 350665
-  },
-  {
-    "title": "Euphoria",
-    "tvdbId": 360261
-  },
-  {
-    "title": "The Beast in Me",
-    "tvdbId": 448245
   },
   {
     "title": "High Potential",
     "tvdbId": 434988
   },
   {
-    "title": "IT: Welcome to Derry",
-    "tvdbId": 418424
+    "title": "The Beast in Me",
+    "tvdbId": 448245
   },
   {
-    "title": "The White Lotus",
-    "tvdbId": 390430
+    "title": "Euphoria",
+    "tvdbId": 360261
+  },
+  {
+    "title": "House of the Dragon",
+    "tvdbId": 371572
   },
   {
     "title": "All Her Fault",
