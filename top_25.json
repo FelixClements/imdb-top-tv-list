@@ -1,67 +1,79 @@
 [
   {
+    "title": "Bridgerton",
+    "tvdbId": 366668
+  },
+  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
   {
-    "title": "His & Hers",
-    "tvdbId": 452521
-  },
-  {
-    "title": "The Pitt",
-    "tvdbId": 448176
-  },
-  {
-    "title": "Landman",
-    "tvdbId": 397424
-  },
-  {
-    "title": "Agatha Christie's Seven Dials",
-    "tvdbId": 448466
-  },
-  {
-    "title": "Stranger Things",
-    "tvdbId": 305288
+    "title": "Wonder Man",
+    "tvdbId": 428629
   },
   {
     "title": "Fallout",
     "tvdbId": 416744
   },
   {
+    "title": "The Pitt",
+    "tvdbId": 448176
+  },
+  {
+    "title": "His & Hers",
+    "tvdbId": 452521
+  },
+  {
     "title": "The Night Manager",
     "tvdbId": 290508
+  },
+  {
+    "title": "Stranger Things",
+    "tvdbId": 305288
+  },
+  {
+    "title": "Landman",
+    "tvdbId": 397424
   },
   {
     "title": "Heated Rivalry",
     "tvdbId": 464461
   },
   {
-    "title": "Jujutsu Kaisen",
-    "tvdbId": 377543
-  },
-  {
     "title": "Game of Thrones",
     "tvdbId": 121361
+  },
+  {
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
+  },
+  {
+    "title": "Shrinking",
+    "tvdbId": 411364
   },
   {
     "title": "Breaking Bad",
     "tvdbId": 81189
   },
   {
-    "title": "Pluribus",
-    "tvdbId": 436457
+    "title": "Jujutsu Kaisen",
+    "tvdbId": 377543
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Daredevil: Born Again",
+    "tvdbId": 422712
+  },
+  {
+    "title": "Schitt's Creek",
+    "tvdbId": 287247
   },
   {
     "title": "The Rookie",
     "tvdbId": 350665
   },
   {
-    "title": "Percy Jackson and the Olympians",
-    "tvdbId": 415151
+    "title": "Pluribus",
+    "tvdbId": 436457
   },
   {
     "title": "Hijack",
@@ -72,10 +84,6 @@
     "tvdbId": 393269
   },
   {
-    "title": "11.22.63",
-    "tvdbId": 301824
-  },
-  {
     "title": "Industry",
     "tvdbId": 371796
   },
@@ -84,19 +92,11 @@
     "tvdbId": 434988
   },
   {
-    "title": "The Beast in Me",
-    "tvdbId": 448245
+    "title": "Run Away",
+    "tvdbId": 445068
   },
   {
-    "title": "Euphoria",
-    "tvdbId": 360261
-  },
-  {
-    "title": "House of the Dragon",
-    "tvdbId": 371572
-  },
-  {
-    "title": "All Her Fault",
-    "tvdbId": 446149
+    "title": "The Last of Us",
+    "tvdbId": 392256
   }
 ]
