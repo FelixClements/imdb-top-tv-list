@@ -1,15 +1,11 @@
 [
   {
-    "title": "Bridgerton",
-    "tvdbId": 366668
-  },
-  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
   {
-    "title": "Wonder Man",
-    "tvdbId": 428629
+    "title": "The Lincoln Lawyer",
+    "tvdbId": 399909
   },
   {
     "title": "Fallout",
@@ -20,32 +16,36 @@
     "tvdbId": 448176
   },
   {
-    "title": "His & Hers",
-    "tvdbId": 452521
+    "title": "Bridgerton",
+    "tvdbId": 366668
   },
   {
     "title": "The Night Manager",
     "tvdbId": 290508
   },
   {
+    "title": "Wonder Man",
+    "tvdbId": 428629
+  },
+  {
     "title": "Stranger Things",
     "tvdbId": 305288
-  },
-  {
-    "title": "Landman",
-    "tvdbId": 397424
-  },
-  {
-    "title": "Heated Rivalry",
-    "tvdbId": 464461
   },
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
   },
   {
-    "title": "Agatha Christie's Seven Dials",
-    "tvdbId": 448466
+    "title": "His & Hers",
+    "tvdbId": 452521
+  },
+  {
+    "title": "Heated Rivalry",
+    "tvdbId": 464461
+  },
+  {
+    "title": "Landman",
+    "tvdbId": 397424
   },
   {
     "title": "Shrinking",
@@ -60,12 +60,12 @@
     "tvdbId": 377543
   },
   {
-    "title": "Daredevil: Born Again",
-    "tvdbId": 422712
+    "title": "House of the Dragon",
+    "tvdbId": 371572
   },
   {
-    "title": "Schitt's Creek",
-    "tvdbId": 287247
+    "title": "Industry",
+    "tvdbId": 371796
   },
   {
     "title": "The Rookie",
@@ -80,23 +80,23 @@
     "tvdbId": 419254
   },
   {
-    "title": "Tell Me Lies",
-    "tvdbId": 393269
-  },
-  {
-    "title": "Industry",
-    "tvdbId": 371796
+    "title": "Agatha Christie's Seven Dials",
+    "tvdbId": 448466
   },
   {
     "title": "High Potential",
     "tvdbId": 434988
   },
   {
-    "title": "Run Away",
-    "tvdbId": 445068
+    "title": "Schitt's Creek",
+    "tvdbId": 287247
   },
   {
-    "title": "The Last of Us",
-    "tvdbId": 392256
+    "title": "Tell Me Lies",
+    "tvdbId": 393269
+  },
+  {
+    "title": "The White Lotus",
+    "tvdbId": 390430
   }
 ]

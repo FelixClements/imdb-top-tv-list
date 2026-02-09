@@ -1,15 +1,11 @@
 [
   {
-    "title": "Bridgerton",
-    "tvdbId": 366668
-  },
-  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
   {
-    "title": "Wonder Man",
-    "tvdbId": 428629
+    "title": "The Lincoln Lawyer",
+    "tvdbId": 399909
   },
   {
     "title": "Fallout",
@@ -20,23 +16,27 @@
     "tvdbId": 448176
   },
   {
-    "title": "His & Hers",
-    "tvdbId": 452521
+    "title": "Bridgerton",
+    "tvdbId": 366668
   },
   {
     "title": "The Night Manager",
     "tvdbId": 290508
   },
   {
+    "title": "Wonder Man",
+    "tvdbId": 428629
+  },
+  {
     "title": "Stranger Things",
     "tvdbId": 305288
   },
   {
-    "title": "Landman",
-    "tvdbId": 397424
+    "title": "Game of Thrones",
+    "tvdbId": 121361
   },
   {
-    "title": "Heated Rivalry",
-    "tvdbId": 464461
+    "title": "His & Hers",
+    "tvdbId": 452521
   }
 ]

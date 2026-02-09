@@ -1,15 +1,11 @@
 [
   {
-    "title": "Bridgerton",
-    "tvdbId": 366668
-  },
-  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
   {
-    "title": "Wonder Man",
-    "tvdbId": 428629
+    "title": "The Lincoln Lawyer",
+    "tvdbId": 399909
   },
   {
     "title": "Fallout",
@@ -18,5 +14,9 @@
   {
     "title": "The Pitt",
     "tvdbId": 448176
+  },
+  {
+    "title": "Bridgerton",
+    "tvdbId": 366668
   }
 ]
