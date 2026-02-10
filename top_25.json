@@ -56,6 +56,10 @@
     "tvdbId": 81189
   },
   {
+    "title": "Steal",
+    "tvdbId": 449950
+  },
+  {
     "title": "Jujutsu Kaisen",
     "tvdbId": 377543
   },
@@ -94,9 +98,5 @@
   {
     "title": "Tell Me Lies",
     "tvdbId": 393269
-  },
-  {
-    "title": "The White Lotus",
-    "tvdbId": 390430
   }
 ]
