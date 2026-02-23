@@ -4,36 +4,36 @@
     "tvdbId": 433631
   },
   {
-    "title": "The Lincoln Lawyer",
-    "tvdbId": 399909
+    "title": "Breaking Bad",
+    "tvdbId": 81189
   },
   {
-    "title": "The Pitt",
-    "tvdbId": 448176
-  },
-  {
-    "title": "Fallout",
-    "tvdbId": 416744
+    "title": "The Night Agent",
+    "tvdbId": 407281
   },
   {
     "title": "Game of Thrones",
     "tvdbId": 121361
   },
   {
-    "title": "Cross",
-    "tvdbId": 426501
+    "title": "The Pitt",
+    "tvdbId": 448176
   },
   {
-    "title": "Bridgerton",
-    "tvdbId": 366668
+    "title": "The Lincoln Lawyer",
+    "tvdbId": 399909
+  },
+  {
+    "title": "House of the Dragon",
+    "tvdbId": 371572
   },
   {
     "title": "Stranger Things",
     "tvdbId": 305288
   },
   {
-    "title": "The Night Manager",
-    "tvdbId": 290508
+    "title": "Fallout",
+    "tvdbId": 416744
   },
   {
     "title": "Heated Rivalry",
@@ -44,59 +44,59 @@
     "tvdbId": 411364
   },
   {
-    "title": "Breaking Bad",
-    "tvdbId": 81189
+    "title": "Cross",
+    "tvdbId": 426501
   },
   {
-    "title": "His & Hers",
-    "tvdbId": 452521
+    "title": "The Night Manager",
+    "tvdbId": 290508
   },
   {
-    "title": "Wonder Man",
-    "tvdbId": 428629
+    "title": "Bridgerton",
+    "tvdbId": 366668
   },
   {
-    "title": "Landman",
-    "tvdbId": 397424
+    "title": "Grey's Anatomy",
+    "tvdbId": 73762
+  },
+  {
+    "title": "The Last Thing He Told Me",
+    "tvdbId": 406686
   },
   {
     "title": "The Rookie",
     "tvdbId": 350665
   },
   {
-    "title": "House of the Dragon",
-    "tvdbId": 371572
+    "title": "Attack on Titan",
+    "tvdbId": 267440
   },
   {
-    "title": "Jujutsu Kaisen",
-    "tvdbId": 377543
+    "title": "Paradise",
+    "tvdbId": 454565
   },
   {
-    "title": "The Artful Dodger",
-    "tvdbId": 429915
-  },
-  {
-    "title": "Hijack",
-    "tvdbId": 419254
-  },
-  {
-    "title": "Steal",
-    "tvdbId": 449950
-  },
-  {
-    "title": "High Potential",
-    "tvdbId": 434988
-  },
-  {
-    "title": "Pluribus",
-    "tvdbId": 436457
+    "title": "Industry",
+    "tvdbId": 371796
   },
   {
     "title": "Tell Me Lies",
     "tvdbId": 393269
   },
   {
-    "title": "Industry",
-    "tvdbId": 371796
+    "title": "Landman",
+    "tvdbId": 397424
+  },
+  {
+    "title": "Better Call Saul",
+    "tvdbId": 273181
+  },
+  {
+    "title": "His & Hers",
+    "tvdbId": 452521
+  },
+  {
+    "title": "Euphoria",
+    "tvdbId": 360261
   }
 ]
