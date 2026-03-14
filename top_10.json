@@ -1,5 +1,9 @@
 [
   {
+    "title": "Young Sherlock",
+    "tvdbId": 450633
+  },
+  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
@@ -34,9 +38,5 @@
   {
     "title": "Beef",
     "tvdbId": 399838
-  },
-  {
-    "title": "Monarch: Legacy of Monsters",
-    "tvdbId": 422598
   }
 ]

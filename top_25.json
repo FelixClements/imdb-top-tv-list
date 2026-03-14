@@ -1,5 +1,9 @@
 [
   {
+    "title": "Young Sherlock",
+    "tvdbId": 450633
+  },
+  {
     "title": "A Knight of the Seven Kingdoms",
     "tvdbId": 433631
   },
@@ -94,9 +98,5 @@
   {
     "title": "Industry",
     "tvdbId": 371796
-  },
-  {
-    "title": "Landman",
-    "tvdbId": 397424
   }
 ]
