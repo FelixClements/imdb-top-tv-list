@@ -84,12 +84,17 @@ def fetch_popular_tv(count: int, ua: str) -> list[dict]:
         page = context.new_page()
         
         try:
-            page.goto(url, wait_until='networkidle', timeout=30000)
-            page.wait_for_selector('a.ipc-title-link-wrapper[href*="/title/tt"]', timeout=15000)
+            print(f"🌐 Loading IMDb page: {url[:80]}...")
+            page.goto(url, wait_until='domcontentloaded', timeout=60000)
+            
+            print("⏳ Waiting for content...")
+            page.wait_for_selector('a.ipc-title-link-wrapper[href*="/title/tt"]', timeout=30000)
+            
+            print("✅ Page loaded, extracting titles...")
             
             last_count = 0
             scroll_attempts = 0
-            max_scroll_attempts = (count // 50) + 5
+            max_scroll_attempts = (count // 50) + 10
             
             while len(items) < count and scroll_attempts < max_scroll_attempts:
                 elements = page.query_selector_all('a.ipc-title-link-wrapper[href*="/title/tt"]')
@@ -116,10 +121,11 @@ def fetch_popular_tv(count: int, ua: str) -> list[dict]:
                     break
                 
                 page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
-                time.sleep(2)
+                time.sleep(3)
                 
                 if len(elements) == last_count:
                     scroll_attempts += 1
+                    print(f"📜 Scrolling... ({scroll_attempts}/{max_scroll_attempts}, found {len(items)} items)")
                 else:
                     scroll_attempts = 0
                     last_count = len(elements)
@@ -127,9 +133,12 @@ def fetch_popular_tv(count: int, ua: str) -> list[dict]:
             print(f"✅ Scraped {len(items)} shows from IMDb")
             
         except PlaywrightTimeoutError:
-            print("⚠️ Timeout waiting for IMDb page - returning partial results")
+            print(f"⚠️ Timeout waiting for IMDb page after multiple retries")
+            print(f"   Page URL: {url[:100]}...")
+            print(f"   Items collected: {len(items)}")
         except Exception as e:
-            print(f"⚠️ Error during scraping: {e}")
+            print(f"⚠️ Error during scraping: {type(e).__name__}: {e}")
+            print(f"   Items collected: {len(items)}")
         finally:
             browser.close()
     
