@@ -33,10 +33,11 @@ else:  # fallback for very old Python versions
 import argparse
 import json
 import re
+import time
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 # ---------- Configurable defaults ----------
 DEFAULT_COUNT = 25                           # how many titles we want
@@ -49,61 +50,106 @@ DEFAULT_USER_AGENT = (
 )
 
 # ------------------------------------------------------------
-# 2️⃣ Helper: fetch the IMDb “popular TV” page
+# 2️⃣ Helper: fetch the IMDb "popular TV" page using Playwright
 # ------------------------------------------------------------
 def fetch_popular_tv(count: int, ua: str) -> list[dict]:
+    """
+    Scrape IMDb using Playwright to handle WAF challenges.Requires browser automation because IMDb's WAF blocks simple HTTP requests.
+    """
     url = IMDB_POPULAR_URL.format(count=count)
-    resp = requests.get(url, headers={"User-Agent": ua}, timeout=15)
-    resp.raise_for_status()
-
-    soup = BeautifulSoup(resp.text, "html.parser")
     items = []
+    
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+                '--no-sandbox',
+            ]
+        )
+        
+        context = browser.new_context(
+            user_agent=ua,
+            viewport={'width': 1920, 'height': 1080},
+            java_script_enabled=True,
+        )
+        
+        context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+        """)
+        
+        page = context.new_page()
+        
+        try:
+            page.goto(url, wait_until='networkidle', timeout=30000)
+            page.wait_for_selector('a.ipc-title-link-wrapper[href*="/title/tt"]', timeout=15000)
+            
+            last_count = 0
+            scroll_attempts = 0
+            max_scroll_attempts = (count // 50) + 5
+            
+            while len(items) < count and scroll_attempts < max_scroll_attempts:
+                elements = page.query_selector_all('a.ipc-title-link-wrapper[href*="/title/tt"]')
+                
+                for elem in elements:
+                    href = elem.get_attribute('href') or ''
+                    imdb_match = re.search(r"tt(\d+)", href)
+                    if not imdb_match:
+                        continue
+                    imdb_id = f"tt{imdb_match.group(1)}"
+                    
+                    title_elem = elem.query_selector('h3.ipc-title__text')
+                    if title_elem:
+                        raw_title = title_elem.inner_text()
+                    else:
+                        raw_title = elem.inner_text()
+                    
+                    clean_title = re.sub(r"^\d+\.\s*", "", raw_title.strip())
+                    
+                    if not any(i['imdbId'] == imdb_id for i in items):
+                        items.append({"title": clean_title, "imdbId": imdb_id})
+                
+                if len(items) >= count:
+                    break
+                
+                page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+                time.sleep(2)
+                
+                if len(elements) == last_count:
+                    scroll_attempts += 1
+                else:
+                    scroll_attempts = 0
+                    last_count = len(elements)
+            
+            print(f"✅ Scraped {len(items)} shows from IMDb")
+            
+        except PlaywrightTimeoutError:
+            print("⚠️ Timeout waiting for IMDb page - returning partial results")
+        except Exception as e:
+            print(f"⚠️ Error during scraping: {e}")
+        finally:
+            browser.close()
+    
+    return items[:count]
 
-    # New IMDb layout: <a class="ipc-title-link-wrapper" href="/title/tt1234567/…">
-    for a_tag in soup.select('a.ipc-title-link-wrapper[href*="/title/tt"]'):
-        href = a_tag["href"]
-        imdb_match = re.search(r"tt(\d+)", href)
-        if not imdb_match:
-            continue
-        imdb_id = f"tt{imdb_match.group(1)}"
 
-        # Title is inside a <h3 class="ipc-title__text …">
-        title_tag = a_tag.select_one("h3.ipc-title__text")
-        if not title_tag:
-            # Safety fallback – use the <a> text itself.
-            raw_title = a_tag.get_text(strip=True)
-        else:
-            raw_title = title_tag.get_text(strip=True)
-
-        # Strip the leading rank number (“1. Wednesday” → “Wednesday”)
-        clean_title = re.sub(r"^\d+\.\s*", "", raw_title)
-
-        items.append({"title": clean_title, "imdbId": imdb_id})
-
-        if len(items) >= count:
-            break
-
-    # --------------------------------------------------------
-    # Fallback for any future IMDb redesign – keep the old logic.
-    # --------------------------------------------------------
-    if not items:
-        for entry in soup.select("div.lister-item"):
-            header = entry.select_one("h3.lister-item-header")
-            if not header:
-                continue
-            a = header.select_one("a")
-            if not a:
-                continue
-            title = a.get_text(strip=True)
-            m = re.search(r"/title/(tt\d+)/", a["href"])
-            if not m:
-                continue
-            imdb_id = m.group(1)
-            items.append({"title": title, "imdbId": imdb_id})
-            if len(items) >= count:
-                break
-
-    return items
+def fetch_popular_tv_with_retry(count: int, ua: str, max_retries: int = 3) -> list[dict]:
+    """Wrapper with retry logic for resilience against transient failures."""
+    for attempt in range(max_retries):
+        try:
+            items = fetch_popular_tv(count, ua)
+            if items:
+                return items
+            print(f"⚠️ Attempt {attempt + 1}: No items scraped, retrying...")
+        except Exception as e:
+            print(f"⚠️ Attempt {attempt + 1} failed: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(5* (attempt + 1))
+    
+    return []
 
 
 # ------------------------------------------------------------
@@ -176,9 +222,9 @@ def main():
     args = parser.parse_args()
 
     try:
-        raw = fetch_popular_tv(args.number, args.user_agent)
+        raw = fetch_popular_tv_with_retry(args.number, args.user_agent)
         if not raw:
-            sys.exit("❌ No shows were scraped from IMDb – aborting.")
+            sys.exit("❌ No shows were scraped from IMDb after retries – aborting.")
         payload = build_payload(raw)
         if not payload:
             sys.exit("❌ No TVDB IDs could be resolved – nothing to write.")

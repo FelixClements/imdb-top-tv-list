@@ -5,7 +5,7 @@ name: Update IMDb Top TV List
 # -----------------------------------------------------------------
 on:
   schedule:
-    - cron: '0 3 * * *'        # daily at 03:00 UTC
+    - cron: '0 3 * * *'        # daily at 03:00 UTC
   workflow_dispatch:           # manual run from the UI
 
 # -----------------------------------------------------------------
@@ -41,7 +41,13 @@ jobs:
           pip install -r requirements.txt
 
       # -----------------------------------------------------------------
-      # 4️⃣ Generate the three JSON lists (5 / 10 / 25)
+      # 3.5️⃣ Install Playwright browsers
+      # -----------------------------------------------------------------
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+
+      # -----------------------------------------------------------------
+      # 4️⃣ Generate the three JSON lists (5 / 10 / 25)
       # -----------------------------------------------------------------
       - name: Generate top 5 JSON list
         run: |
