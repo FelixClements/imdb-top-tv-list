@@ -51,19 +51,19 @@ jobs:
       # -----------------------------------------------------------------
       - name: Generate top 5 TV shows
         run: |
-          python generate_list.py -n 5 -o top_5.json
+          python generate_list.py -n 5 -o top_tvshows_5.json
       - name: Wait a moment (timestamps)
         run: sleep 2
 
       - name: Generate top 10 TV shows
         run: |
-          python generate_list.py -n 10 -o top_10.json
+          python generate_list.py -n 10 -o top_tvshows_10.json
       - name: Wait a moment (timestamps)
         run: sleep 2
 
       - name: Generate top 25 TV shows
         run: |
-          python generate_list.py -n 25 -o top_25.json
+          python generate_list.py -n 25 -o top_tvshows_25.json
       - name: Wait a moment (timestamps)
         run: sleep 2
 
@@ -96,4 +96,4 @@ jobs:
         with:
           commit_message: |
             🤖 Update IMDb top TV shows and movies JSON lists
-          file_pattern: "top_*.json top_movies_*.json"
+          file_pattern: "top_tvshows_*.json top_movies_*.json"

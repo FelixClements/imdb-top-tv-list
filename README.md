@@ -68,7 +68,7 @@ python generate_list.py
 python generate_movies.py
 
 # 7️⃣ Verify the output
-head -n 10 top_25.json
+head -n 10 top_tvshows_25.json
 head -n 10 top_movies_25.json
 ```
 
@@ -78,9 +78,9 @@ head -n 10 top_movies_25.json
 
 | File | Description | Use with |
 |------|-------------|----------|
-| `top_5.json` | Top 5 popular TV shows | Sonarr |
-| `top_10.json` | Top 10 popular TV shows | Sonarr |
-| `top_25.json` | Top 25 popular TV shows | Sonarr |
+| `top_tvshows_5.json` | Top 5 popular TV shows | Sonarr |
+| `top_tvshows_10.json` | Top 10 popular TV shows | Sonarr |
+| `top_tvshows_25.json` | Top 25 popular TV shows | Sonarr |
 | `top_movies_5.json` | Top 5 popular movies (Bollywood excluded) | Radarr |
 | `top_movies_10.json` | Top 10 popular movies (Bollywood excluded) | Radarr |
 | `top_movies_25.json` | Top 25 popular movies (Bollywood excluded) | Radarr |
@@ -125,7 +125,7 @@ The workflow runs daily at 03:00 UTC and generates all six JSON files:
 
 ```bash
 # Generate top 50 TV shows
-python generate_list.py -n 50 -o top_50.json
+python generate_list.py -n 50 -o top_tvshows_50.json
 
 # Generate top 100 movies
 python generate_movies.py -n 100 -o top_movies_100.json
