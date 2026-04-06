@@ -1,101 +1,42 @@
-# 📺 IMDb-Top-TV-List → Sonarr / Radarr
+# 🎬 IMDb Top Lists → Sonarr & Radarr
 
-**Automated nightly generation of JSON files containing the top-N popular TV series and movies on IMDb, enriched with TVDB/IMDb IDs**.  
-The files are published via GitHub Actions and can be consumed by:
-- **Sonarr** → Settings → Import Lists → Custom (for TV shows)
-- **Radarr** → Settings → Import Lists → Custom (for movies)
+**Automated daily generation of popular IMDb TV shows (Sonarr) and movies (Radarr) as JSON import lists.**
 
----
-
-## 🎯 Why this repo?
-
-- **Never miss a hit** – every night the list is refreshed from IMDb's "Popular TV Shows" and "Popular Movies" pages.  
-- **Sonarr/Radarr-ready JSON** – TV entries include `title` and `tvdbId`; movie entries include `title` and `imdbId`.
-- **Bollywood-filtered movies** – movie list automatically excludes Indian cinema using IMDb URL parameters.
-- **Zero-maintenance** – once set up the whole pipeline runs automatically.
-- **Fully open source** – MIT licensed, easy to fork or extend.
+[![GitHub Actions](https://github.com/FelixClements/imdb-top-lists/workflows/Update%20IMDb%20Lists/badge.svg)](https://github.com/FelixClements/imdb-top-lists/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## ✨ Features
+## ✨ What This Does
 
-| Feature | Details |
-|--------|----------|
-| ✅ Scrapes the latest IMDb "Popular TV Shows" page | Handles the new IMDb layout (`ipc-title-link-wrapper`). |
-| 🎬 Scrapes the latest IMDb "Popular Movies" page | Bollywood films excluded via URL filter (`countries=!in&languages=!hi`). |
-| 🔎 TV: Resolves IMDb IDs to TVDB IDs via **TVMaze** (free, no API key) | Guarantees Sonarr can add the series. |
-| 📦 Generates UTF-8 JSON (`title` + `tvdbId`/`imdbId`) | Compatible with Sonarr/Radarr **Custom** import lists. |
-| 🕒 **GitHub Action** runs daily at 03:00 UTC | Keeps the list up-to-date without a server. |
-| ⚙️ Configurable number of titles (`-n` flag) | Default = 25 but you can ask for 5, 10, 50, … |
-| 🐍 Simple Python scripts | `generate_list.py` for TV, `generate_movies.py` for movies. |
-| 📂 No external secrets needed | All requests are public (IMDb page & TVMaze). |
+This repository automatically generates and updates JSON lists of popular content from IMDb:
 
----
+| Content Type | Output Files | Use With |
+|--------------|--------------|----------|
+| 📺 **TV Shows** | `top_tvshows_5.json`, `top_tvshows_10.json`, `top_tvshows_25.json` | **Sonarr** |
+| 🎥 **Movies** | `top_movies_5.json`, `top_movies_10.json`, `top_movies_25.json` | **Radarr** |
 
-## 🛠️ Prerequisites
-
-| Component | What you need |
-|-----------|----------------|
-| **Python 3.9+** | `python3 --version` |
-| **pip** | Comes with Python; install dependencies from `requirements.txt`. |
-| **Sonarr** (v3+ recommended) | For TV shows – running locally or on a NAS. |
-| **Radarr** | For movies – running locally or on a NAS. |
-| **GitHub account** | To host the repository and run the Action. |
+**Key Features:**
+- 🔄 **Daily automation** - GitHub Actions updates lists every day at 03:00 UTC
+- 🎬 **Bollywood excluded** - Movies list automatically filters Indian cinema
+- 🔍 **TVDB resolution** - TV shows include TVDB IDs for Sonarr compatibility
+- 🚀 **Playwright-powered** - Bypasses IMDb's anti-bot protection
+- 📦 **Zero maintenance** - Works automatically once set up
 
 ---
 
-## 📦 Installation – Running the script locally
+## 📋 Output Format
 
-```bash
-# 1️⃣ Clone the repo
-git clone https://github.com/<your-user>/imdb-top-tv-list.git
-cd imdb-top-tv-list
-
-# 2️⃣ Create a virtual environment (recommended)
-python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
-# 3️⃣ Install required Python packages
-pip install -r requirements.txt
-
-# 4️⃣ Install Playwright browsers (required for scraping)
-playwright install chromium --with-deps
-
-# 5️⃣ Generate TV shows list (default = 25 titles)
-python generate_list.py
-
-# 6️⃣ Generate movies list (default = 25 titles, Bollywood excluded)
-python generate_movies.py
-
-# 7️⃣ Verify the output
-head -n 10 top_tvshows_25.json
-head -n 10 top_movies_25.json
-```
-
----
-
-## 📋 Output Files
-
-| File | Description | Use with |
-|------|-------------|----------|
-| `top_tvshows_5.json` | Top 5 popular TV shows | Sonarr |
-| `top_tvshows_10.json` | Top 10 popular TV shows | Sonarr |
-| `top_tvshows_25.json` | Top 25 popular TV shows | Sonarr |
-| `top_movies_5.json` | Top 5 popular movies (Bollywood excluded) | Radarr |
-| `top_movies_10.json` | Top 10 popular movies (Bollywood excluded) | Radarr |
-| `top_movies_25.json` | Top 25 popular movies (Bollywood excluded) | Radarr |
-
-### JSON Format
-
-**TV Shows (Sonarr):**
+### TV Shows (Sonarr)
 ```json
 [
   {"title": "One Piece", "tvdbId": 392276},
-  {"title": "The Pitt", "tvdbId": 448176}
+  {"title": "The Pitt", "tvdbId": 448176},
+  {"title": "Invincible", "tvdbId": 368207}
 ]
 ```
 
-**Movies (Radarr):**
+### Movies (Radarr)
 ```json
 [
   {"title": "Project Hail Mary", "imdbId": "tt12042730"},
@@ -105,23 +46,58 @@ head -n 10 top_movies_25.json
 
 ---
 
-## 🔄 GitHub Actions
+## 🚀 Quick Start
 
-The workflow runs daily at 03:00 UTC and generates all six JSON files:
+### Import to Sonarr
 
-1. Checks out the repository
-2. Sets up Python 3.11
-3. Installs dependencies
-4. Installs Playwright browsers
-5. Generates TV show lists (5, 10, 25)
-6. Generates movie lists (5, 10, 25)
-7. Commits changes if any files updated
+1. Open **Sonarr** → **Settings** → **Import Lists**
+2. Click **+** → **Custom**
+3. Set:
+   - **List Name:** `IMDb Top TV Shows`
+   - **List URL:** `https://raw.githubusercontent.com/FelixClements/imdb-top-lists/main/top_tvshows_25.json`
+4. Save and enable
+
+### Import to Radarr
+
+1. Open **Radarr** → **Settings** → **Import Lists**
+2. Click **+** → **Custom**
+3. Set:
+   - **List Name:** `IMDb Top Movies`
+   - **List URL:** `https://raw.githubusercontent.com/FelixClements/imdb-top-lists/main/top_movies_25.json`
+4. Save and enable
 
 ---
 
-## 🔧 Configuration
+## 🛠️ Local Usage
 
-### Number of Titles
+### Prerequisites
+
+- Python 3.9+
+- pip
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/FelixClements/imdb-top-lists.git
+cd imdb-top-lists
+
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Playwright browsers
+playwright install chromium --with-deps
+
+# Run the scrapers
+python generate_list.py      # TV shows → top_tvshows_25.json
+python generate_movies.py   # Movies → top_movies_25.json
+```
+
+### Custom Options
 
 ```bash
 # Generate top 50 TV shows
@@ -131,43 +107,135 @@ python generate_list.py -n 50 -o top_tvshows_50.json
 python generate_movies.py -n 100 -o top_movies_100.json
 ```
 
-### Custom User Agent
+---
 
-```bash
-python generate_list.py --user-agent "Your Custom Agent/1.0"
+## ⚙️ Configuration
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `-n, --number` | 25 | Number of titles to fetch |
+| `-o, --output` | `top_tvshows_25.json` / `top_movies_25.json` | Output filename |
+| `--user-agent` | Chrome 140 | Custom User-Agent header |
+
+---
+
+## 🎬 Bollywood Filtering
+
+Movie list automatically excludes Indian cinema using IMDb URL parameters:
+- `countries=!in` - Excludes India as country of origin
+- `languages=!hi` - Excludes Hindi language films
+
+This ensures a Western/international focus while respecting that Bollywood content has dedicated platforms.
+
+---
+
+## 🔄 GitHub Actions Workflow
+
+The workflow runs automatically every day at 03:00 UTC:
+
+```yaml
+Jobs:
+1. Checkout repository
+2. Setup Python 3.11
+3. Install dependencies
+4. Install Playwright browsers
+5. Generate TV show lists (5, 10, 25)
+6. Generate movie lists (5, 10, 25)
+7. Commit changes (if any)
+```
+
+**Manual trigger:** Go to **Actions** → **Update IMDb Lists** → **Run workflow**
+
+---
+
+## 📊 How It Works
+
+### Architecture
+
+```
+┌─────────────────┐
+│  GitHub Actions │
+│  (Daily 03:00)  │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Playwright     │ ◄── Bypasses WAF protection
+│  Chromium Browser│
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  IMDb Scraper   │ ◄── Scrapes popular TV/movies
+└────────┬────────┘
+         │
+         ├──► TV Shows ──► TVMaze API ──► TVDB ID
+         │
+         └──► Movies (Bollywood filtered)
+         │
+         ▼
+   JSON Files (committed to repo)
+         │
+         ▼
+   Sonarr / Radarr import
 ```
 
 ---
 
-## 🎬 About Bollywood Filtering
+## 📈 Files Generated
 
-The movie scraper automatically excludes Bollywood films using IMDb URL parameters:
-- `countries=!in` – Excludes India as country of origin
-- `languages=!hi` – Excludes Hindi language films
-
-This ensures the movie list focuses on Western/international cinema while respecting that Bollywood films have their own dedicated platforms and audiences.
+| File | Content | Source |
+|------|---------|--------|
+| `top_tvshows_5.json` | Top 5 TV shows | IMDb Popular TV |
+| `top_tvshows_10.json` | Top 10 TV shows | IMDb Popular TV |
+| `top_tvshows_25.json` | Top 25 TV shows | IMDb Popular TV |
+| `top_movies_5.json` | Top 5 movies | IMDb Popular Movies |
+| `top_movies_10.json` | Top 10 movies | IMDb Popular Movies |
+| `top_movies_25.json` | Top 25 movies | IMDb Popular Movies |
 
 ---
 
-## 📄 License
+## 🔧 Troubleshooting
 
-MIT License – see [LICENSE](LICENSE) for details.
+### Playwright Browser Issues
+
+```bash
+# Reinstall Playwright browsers
+playwright install chromium --with-deps
+```
+
+### No Items Scraped
+
+The scraper includes retry logic (3 attempts) and increased timeouts for reliability. If issues persist:
+1. Check internet connection
+2. Verify IMDb URL is accessible
+3. Check GitHub Actions logs for details
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
+Contributions welcome! Feel free to:
+- Report bugs via [Issues](https://github.com/FelixClements/imdb-top-lists/issues)
 - Suggest features
 - Submit pull requests
 
 ---
 
-## 📝 Changelog
+## 📝 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+## 📜 Changelog
 
 ### 2026-04-06
-- Added `generate_movies.py` for movie scraping
-- Bollywood exclusion via IMDb URL parameters
-- GitHub Actions now generates both TV and movie lists
-- Updated to use Playwright for scraping (fixed WAF issues)
+- **Breaking:** Renamed output files to `top_tvshows_X.json` and `top_movies_X.json`
+- Added movie scraper for Radarr with Bollywood exclusion
+- Fixed WAF blocking by switching to Playwright browser automation
+- Improved timeouts for GitHub Actions reliability
+- Added detailed logging for debugging
+
+### Historical
+- Initial release: TV show scraper for Sonarr
